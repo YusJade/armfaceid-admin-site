@@ -9,19 +9,19 @@ const routes: RouteRecordRaw[] = [
     meta: {
       icon: 'lucide:layout-dashboard',
       order: -1,
-      title: $t('page.dashboard.title'),
+      title: 'ArmFaceID',
     },
-    name: 'Dashboard',
-    path: '/',
+    name: 'ArmFaceID',
+    path: '/armfaceid',
     children: [
       {
-        name: 'Analytics',
-        path: '/analytics',
-        component: () => import('#/views/dashboard/analytics/index.vue'),
+        name: 'Database',
+        path: '/database',
+        component: () => import('#/views/armfaceid/database.vue'),
         meta: {
           affixTab: true,
           icon: 'lucide:area-chart',
-          title: $t('page.dashboard.analytics'),
+          title: '数据库',
         },
       },
       {

@@ -123,12 +123,13 @@ watch(
 </script>
 
 <template>
+  <!-- TODO: This component might encapsulate a sidbar menu. -->
   <BasicLayout @clear-preferences-and-logout="handleLogout">
     <template #user-dropdown>
       <UserDropdown
         :avatar
         :menus
-        :text="userStore.userInfo?.realName"
+        :text="userStore.userInfo?.AdminName"
         description="ann.vben@gmail.com"
         tag-text="Pro"
         @logout="handleLogout"

@@ -5,7 +5,7 @@ interface UserInfo extends BasicUserInfo {
   /**
    * 用户描述
    */
-  desc: string;
+  description: string;
   /**
    * 首页地址
    */
@@ -15,6 +15,11 @@ interface UserInfo extends BasicUserInfo {
    * accessToken
    */
   token: string;
+
+  /**
+   * 用户名
+   */
+  username: string;
 }
 
 export type { UserInfo };
